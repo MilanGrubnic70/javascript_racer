@@ -31,9 +31,7 @@ understand event handling and callback functions.
 
 ### Release 0: The Setup
 
-There is no skeleton for this challenge.  You will have to write the HTML, CSS and JavaScript files yourself (and link them all together).  Let's just start with building a simple two-player board.  This will be
-rendered via HTML.  There are a few ways you could do it, e.g., a table that
-looks like:
+There is no skeleton for this challenge.  You will have to write the HTML, CSS and JavaScript files yourself (and link them all together).  Let's just start with building a simple two-player board.  This will be rendered via HTML.  There are a few ways you could do it, e.g., a table that looks like:
 
 ```html
 <table class="racer_table">
