@@ -3,10 +3,17 @@ function init() {
     var FirstPlayerPosition = 1;
     var SecondPlayerPosition = 1;
 
+    function checkered_flag(player, spot) {
+        if (spot == 10) {
+            alert("Player " + player + " wins!!!");
+        }
+    }
+
     function update_player_1(arg) {
         FirstPlayerPosition += arg;
         $('tr#1stPlayerLane td.active').toggleClass();
         $("tr#1stPlayerLane td:nth-child(" + FirstPlayerPosition + ")").addClass("active");
+        checkered_flag("One", FirstPlayerPosition);
     }
 
     function update_player_2(arg) {
