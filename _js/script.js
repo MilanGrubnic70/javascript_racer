@@ -6,6 +6,7 @@ function init() {
     function checkered_flag(player, spot) {
         if (spot == 10) {
             alert("Player " + player + " wins!!!");
+            location.reload();
         }
     }
 
