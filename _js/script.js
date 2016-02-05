@@ -1,15 +1,16 @@
 function init() {
+
     var FirstPlayerPosition = 1;
     var SecondPlayerPosition = 1;
 
-    function update_player_1(n) {
-        FirstPlayerPosition += n;
-        $('td.active').toggleClass();
+    function update_player_1(arg) {
+        FirstPlayerPosition += arg;
+        $('tr#1stPlayerLane td.active').toggleClass();
         $("tr#1stPlayerLane td:nth-child(" + FirstPlayerPosition + ")").addClass("active");
     }
 
-    function update_player_2(n) {
-        SecondPlayerPosition += n;
+    function update_player_2(arg) {
+        SecondPlayerPosition += arg;
         $('tr#2ndPlayerLane td.active').toggleClass();
         $("tr#2ndPlayerLane td:nth-child(" + SecondPlayerPosition + ")").addClass("active");
     }
@@ -27,16 +28,6 @@ function init() {
 
 
     })
-
-
-
-
-
-
-
-
-
-
 
 }
 
