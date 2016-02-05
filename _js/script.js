@@ -1,6 +1,6 @@
 function init() {
-    var FirstPlayerPosition = 0;
-    var SecondPlayerPosition = 0;
+    var FirstPlayerPosition = 1;
+    var SecondPlayerPosition = 1;
 
 
 
@@ -8,14 +8,7 @@ function init() {
     function update_player(n) {
         FirstPlayerPosition += n;
         x = $('td.active');
-        // console.log(next);
         x.toggleClass();
-        // $('td.active').next().toggleClass('.active');
-        // x: child('.active').toggleClass();
-
-        $("td.active").next().addClass("active");
-        // $( "td" ).sibling().addClass( "active" );
-
         $("tr td:nth-child(" + FirstPlayerPosition + ")").addClass("active");
 
     }
