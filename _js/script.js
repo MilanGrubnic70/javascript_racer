@@ -9,8 +9,7 @@ function init() {
         FirstPlayerPosition += n;
         x = $('td.active');
         x.toggleClass();
-        $("tr td:nth-child(" + FirstPlayerPosition + ")").addClass("active");
-
+        $("tr#1stPlayerLane td:nth-child(" + FirstPlayerPosition + ")").addClass("active");
     }
 
 
